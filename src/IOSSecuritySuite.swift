@@ -1,14 +1,9 @@
 import Foundation
+import JailbreakChecker
 
-@objc(ModusEchoSwift) class ModusEchoSwift: CDVPlugin{
+@objc(IOSSecuritySuite) class IOSSecuritySuite: CDVPlugin{
     func isRooted(command: CDVInvokedUrlCommand) {
         var pluginResult = CDVPluginResult(
-            status: CDVCommandStatus_ERROR
-        )
-
-        let msg = command.argumends[0] as? String ?? ""
-
-        pluginResult = CDVPluginResult(
             status: CDVCommandStatus_OK,
             messageAsBool: JailbreakChecker.amIJailbroken()
         )
