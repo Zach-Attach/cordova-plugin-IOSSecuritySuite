@@ -6,4 +6,4 @@ const IOSSecuritySuite = {
   },
 };
 
-export default IOSSecuritySuite;
+module.exports = IOSSecuritySuite;
