@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
 >
     <name>cordova-plugin-ios-security-suite</name>
-    <js-module name="cordova-plugin-ios-security-suite" src="www/cordova-plugin-ios-security-suite.js">
+    <js-module name="IOSSecuritySuite" src="www/cordova-plugin-ios-security-suite.js">
         <clobbers target="IOSSecuritySuite" />
     </js-module>
     <platform name="ios">
