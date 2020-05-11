@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-IOSSecuritySuite",
+  "version": "0.0.1",
+  "description": "a cordova plugin for implementing IOSSecuritySuite https://github.com/securing/IOSSecuritySuite",
+  "cordova": {
+    "id": "cordova-plugin-IOSSecuritySuite",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "root",
+    "jailbreak",
+    "ios",
+    "cordova"
+  ],
+  "engines": {
+    "name": "cordova",
+    "version": ">=6.0.0"
+  },
+  "license": "MIT"
+}
