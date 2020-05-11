@@ -4,7 +4,7 @@ import Foundation
     func isRooted(command: CDVInvokedUrlCommand) {
         var pluginResult = CDVPluginResult(
             status: CDVCommandStatus_OK,
-            messageAsBool: JailbreakChecker.amIJailbroken()
+            messageAs: JailbreakChecker.amIJailbroken()
         )
         self.commandDelegate!.send(
             pluginResult,
