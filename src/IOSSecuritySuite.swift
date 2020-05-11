@@ -12,7 +12,7 @@ import Foundation
             status: CDVCommandStatus_OK,
             messageAsBool: JailbreakChecker.amIJailbroken()
         )
-        self.commandDelegate!.sendPluginResult(
+        self.commandDelegate!.send(
             pluginResult,
             callbackId: command.callbackId
         )
