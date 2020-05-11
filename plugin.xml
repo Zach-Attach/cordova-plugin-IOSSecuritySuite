@@ -1,31 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-IOSSecuritySuite" version="1.0.0">
-    <name>CordovaIOSSecuritySuite</name>
-
-    <description>a cordova plugin for implementing IOSSecuritySuite https://github.com/securing/IOSSecuritySuite</description>
-    <license>MIT</license>
-
-    <keywords>cordova,ios,iosecuritysuite,jailbreak,cordovaiossecuritysuite</keywords>
-    <repo>https://github.com/Zach-Attach/cordova-plugin-IOSSecuritySuite.git</repo>
-    <issue>https://github.com/Zach-Attach/cordova-plugin-IOSSecuritySuite/issues</issue>
-
-    <engines>
-        <engine name="cordova-ios" version=">=5.0.0"/>
-    </engines>
-
-<!--    <js-module src="www/toastyplugin.js" name="toastyPlugin">-->
-<!--        <clobbers target="window.plugins.toastyPlugin" />-->
-<!--    </js-module>-->
-
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+    id="cordova-plugin-ios-security-suite" 
+    version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <name>cordova-plugin-ios-security-suite</name>
+    <js-module name="cordova-plugin-ios-security-suite" src="www/cordova-plugin-ios-security-suite.js">
+        <clobbers target="IOSSecuritySuite" />
+    </js-module>
     <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="ios-package" value="CordovaIOSSecuritySuite"/>
-            </feature>
-        </config-file>
-        <header-file src="src/CordovaIOSSecuritySuite.h" />
-        <source-file src="src/CordovaIOSSecuritySuite.m" />
-        <framework src="IOSSecuritySuite" spec="1.5.0"/>
+    <config-file target="config.xml" parent="/*">
+        <feature name="IOSSecuritySuite">
+        <param name="ios-package" value="IOSSecuritySuite" />
+        </feature>
+    </config-file>
+    <source-file src="src/ios/IOSSecuritySuite.swift" />
     </platform>
 </plugin>
