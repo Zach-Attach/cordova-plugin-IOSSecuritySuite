@@ -15,6 +15,11 @@
         <param name="ios-package" value="IOSSecuritySuite" />
         </feature>
     </config-file>
+    <header-file src="src/IOSSecuritySuite.h" />
     <source-file src="src/IOSSecuritySuite.swift" />
+    <source-file src="src/DebuggerChecker.swift" />
+    <source-file src="src/EmulatorChecker.swift" />
+    <source-file src="src/JailbreakChecker.swift" />
+    <source-file src="src/ReverseEngineeringToolsChecker.swift" />
     </platform>
 </plugin>
