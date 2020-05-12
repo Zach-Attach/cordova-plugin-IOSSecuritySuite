@@ -13,3 +13,4 @@
 #import <Foundation/Foundation.h>
 #import <Darwin/Darwin.h>
 #import <MachO/MachO.h>
+#import <Cordova/CDVPlugin.h>
