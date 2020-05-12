@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin 
-    id="cordova-plugin-ios-security-suite" 
+    id="IOSSecuritySuite" 
     version="0.0.1" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android"
 >
-    <name>cordova-plugin-ios-security-suite</name>
-    <js-module name="IOSSecuritySuite" src="www/cordova-plugin-ios-security-suite.js">
+    <name>IOSSecuritySuite</name>
+    <js-module name="IOSSecuritySuite" src="www/IOSSecuritySuite.js">
         <clobbers target="IOSSecuritySuite" />
     </js-module>
     <platform name="ios">
