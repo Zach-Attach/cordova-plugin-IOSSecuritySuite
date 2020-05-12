@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for IOSSecuritySuite.
-FOUNDATION_EXPORT double IOSSecuritySuiteVersionNumber;
-
-//! Project version string for IOSSecuritySuite.
-FOUNDATION_EXPORT const unsigned char IOSSecuritySuiteVersionString[];
-
 // In this header, you should import all the public headers of your framework using statements like #import <IOSSecuritySuite/PublicHeader.h>
 
-
+#import <Foundation/Foundation.h>
+#import <Darwin/Darwin.h>
+#import <MachO/MachO.h>
