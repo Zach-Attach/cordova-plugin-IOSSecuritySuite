@@ -1,7 +1,7 @@
 import Foundation
 
 @objc(IOSSecuritySuite) class IOSSecuritySuite: CDVPlugin{
-    func isRooted(command: CDVInvokedUrlCommand) {
+    @objc(isRooted:) func isRooted(command: CDVInvokedUrlCommand) {
         var pluginResult = CDVPluginResult(
             status: CDVCommandStatus_OK,
             messageAs: JailbreakChecker.amIJailbroken()
